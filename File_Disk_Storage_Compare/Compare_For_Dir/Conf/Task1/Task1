@@ -1,0 +1,21 @@
+#[Srouce Database]
+src_ip='111.111.111.111'
+src_port=3306
+src_username='anchnet'
+src_password='xxxxxxx'
+
+#[Destination Database]
+dest_ip=
+dest_port=
+dest_username=
+dest_password=
+
+#[Workspace Info]
+task_out_dir="$(dirname $(dirname $CURRENT_DIR))/Workspace/$task_config"
+db_list=$src_ip.list
+
+#[Log Info]
+
+#[Alarm Info]
+wecombot_url='https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=c2a76d32-291a-4d03-8756-c6e43c13ed15'
+alarm_context="error"

@@ -1,0 +1,11 @@
+############SmartCompare_error.log#############
+  
+2023-02-24 21:04:58 [ERROR] 源端数据库登陆验证失败，请确认数据库连接信息
+2023-02-24 21:38:38 [ERROR] 源端数据库登陆验证失败，请确认数据库连接信息
+2023-02-24 21:40:45 [ERROR] 源端数据库登陆验证失败，请确认数据库连接信息
+2023-02-24 21:41:02 [ERROR] 源端数据库登陆验证失败，请确认数据库连接信息
+2023-02-24 21:48:41 [ERROR] 源端数据库登陆验证失败，请确认数据库连接信息
+2023-02-24 21:49:24 [ERROR] 源端数据库登陆验证失败，请确认数据库连接信息
+2023-02-28 00:36:23 [ERROR] Please check login information or You have an error in your SQL syntax
+2023-02-28 00:37:58 [ERROR] Please check login information or You have an error in your SQL syntax
+2023-02-28 01:01:09 [ERROR] Please check login information or You have an error in your SQL syntax

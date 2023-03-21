@@ -1,0 +1,34 @@
+#[Srouce VM]
+src_ip='ggbang.club'
+src_port=22
+src_username='gg'
+src_password='www.51idc.COM'
+src_id_rsa='src_id_rsa'
+#不能以”/“结尾
+src_dir='/home/gg/SmartCompare'
+
+#[Destination VM]
+dest_ip='43.254.55.108'
+dest_port=22
+dest_username='root'
+dest_password='Meiyisi@123'
+dest_id_rsa='dest_id_rsa'
+#不能以”/“结尾
+dest_dir='/root/SmartCompare'
+
+#[Workspace Info]
+task_out_dir="$(dirname $(dirname $CURRENT_DIR))/Workspace/$task_config"
+dir_list=$src_ip.list
+login_way='password'
+#login_way='key'
+local_ip='43.254.55.108'
+
+#[Log Info]
+
+#[Alarm Info]
+wecombot_url='https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=c2a76d32-291a-4d03-8756-c6e43c13ed15'
+alarm_context="error"
+
+#[Exclude DB]
+exclude_file="$(dirname $(dirname $CURRENT_DIR))/Conf/${task_config}/exclude"
+

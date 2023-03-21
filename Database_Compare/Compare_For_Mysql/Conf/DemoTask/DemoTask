@@ -1,0 +1,24 @@
+#[Srouce Database]
+src_ip='154.223.189.81'
+src_port=3306
+src_username='anchnet'
+src_password='www.51idc.COM'
+
+#[Destination Database]
+dest_ip='154.223.189.81'
+dest_port=3306
+dest_username='anchnet'
+dest_password='www.51idc.COM'
+
+#[Workspace Info]
+task_out_dir="$(dirname $(dirname $CURRENT_DIR))/Workspace/$task_config"
+db_list=$src_ip.list
+
+#[Log Info]
+
+#[Alarm Info]
+wecombot_url='https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=c2a76d32-291a-4d03-8756-c6e43c13ed15'
+alarm_context="error"
+
+#[Exclude DB]
+exclude_file="$(dirname $(dirname $CURRENT_DIR))/Conf/${task_config}/exclude"
