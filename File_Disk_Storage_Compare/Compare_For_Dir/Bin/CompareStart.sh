@@ -64,7 +64,7 @@ case "$module" in
   myecho 1 "all modules compare start" && myLog 2 "all modules compare start" >> $(dirname $CURRENT_DIR)/Logs/info.log
   bash $(dirname $CURRENT_DIR)/Scripts/Common/0_1_Ssh_Check.sh $task_config
   if [ $? -eq 0 ];then
-    bash $(dirname $CURRENT_DIR)/Scripts/Common/1_File_Data_Compare.sh $task_config
+    bash $(dirname $CURRENT_DIR)/Scripts/Common/1_1_File_Data_Compare.sh $task_config
   fi
   ;;
   *)
