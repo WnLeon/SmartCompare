@@ -9,8 +9,8 @@
 # 引入公共函数和配置文件
 CURRENT_DIR=$(dirname $(readlink -f "$0"))
 #echo $CURRENT_DIR
-#task_config=$1
-task_config=DemoTask
+task_config=$1
+#task_config=DemoTask
 source $(dirname $CURRENT_DIR)/Scripts/Common/0_0_Common_Format.sh
 source $(dirname $CURRENT_DIR)/Conf/${task_config}/${task_config}
 

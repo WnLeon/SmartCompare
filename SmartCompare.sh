@@ -43,7 +43,7 @@ function start(){
   ;;
   2)
     echo -e "\033[36m ------------------ i am File_Disk_storage_Compare ------------------ \033[0m"
-    cd $Dir2_dir && bash CompareStart.sh
+    cd $Dir2_dir && bash CompareStart.sh $1
   ;;
   3)
     echo -e "\033[36m ------------------ i am File_Object_Storage_Compare ------------------ \033[0m"
@@ -57,4 +57,4 @@ function start(){
 
 # EXEC
 tips
-start
+start $1
