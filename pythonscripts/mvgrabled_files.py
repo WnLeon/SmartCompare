@@ -27,6 +27,7 @@ def backup_files(dest_dir,source_dir,file_path):
     with open(file_path, 'r',encoding='utf-8') as f:
         file_list = f.read().splitlines()
 
+    messagebox.askokcancel('提示','确认要执行次操作吗？')
     # Move each file
     for file_path in file_list:
         # Extract the directory structure
@@ -60,6 +61,7 @@ def delete_files(file_path):
 
     success_count = 0
     failure_count = 0
+    messagebox.askokcancel('提示', '确认要执行次操作吗？')
     with open(file_path, "r",encoding="utf-8") as f:
         for line in f:
             file_path = line.strip()
