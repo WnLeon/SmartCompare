@@ -33,14 +33,19 @@ def filter_garbled_lines(file_list):
 def filter_filename():
     root = tk.Tk()
     root.withdraw()
+    messagebox.showinfo('Info', "Please choose dir")
     dir_path = filedialog.askdirectory()
     filter_filenames(dir_path)
 
-if __name__ == "__main__":
-    #过滤乱码名文件
+def start():
     filter_filename()
     filter_garbled_lines('files.txt')
     messagebox.showinfo('isgrabled_files程序执行成功', '异常文件名请查看“filter_grabled_lines.txt”')
+
+if __name__ == "__main__":
+    #过滤乱码名文件
+    #start()
+    pass
 
 
 

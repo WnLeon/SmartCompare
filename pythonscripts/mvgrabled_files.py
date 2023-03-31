@@ -89,12 +89,14 @@ def backup():
     dir_path = filedialog.askopenfilename()
     result = backup_files(backup_path,source_path,dir_path)
     print(result)
+    messagebox.showinfo('mvgrabled_files程序执行成功', '执行结果请查看“move_files.log”')
 
 def deletfiles(backup_path):
     os.remove(backup_path)
+    messagebox.showinfo('mvgrabled_files程序执行成功','执行结果请查看“move_files.log”')
 
 if __name__ == "__main__":
     #删除乱码名文件
-    backup()
+    # backup()
    # deletfiles()
-    messagebox.showinfo('mvgrabled_files程序执行成功','执行结果请查看“move_files.log”')
+    pass
